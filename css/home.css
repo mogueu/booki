@@ -83,8 +83,13 @@ form{
     display: none;
 }
 
-form label{
+form .label{
     background-color: #eee;
+    border-radius: 10px 0px 0px 10px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 form button{
@@ -95,10 +100,6 @@ form button{
 form input, form label, form button{
     border: 1px solid #eee;
     padding: 10px;
-}
-
-form label{
-    border-radius: 10px 0px 0px 10px;
 }
 
 form button{
