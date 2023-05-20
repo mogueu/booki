@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Raleway, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    margin: 0px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+h1{
+    font-size: 28px;
+}
+
+h2{
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+h3{
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+.rate{
+    color: blue;
+}
+
+article:hover{
+    box-shadow: 10px 10px 10px 0px #ccc;
+}
+
+
+/* Header */
+#site-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo img{
+    width: auto;
+    padding: 0px 15px;
+    height: 70px;
+}
+
+.site-navigation ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.site-navigation ul a{
+    padding: 25px 15px;
+    height: inherit;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.site-navigation a:hover{
+    border-top: 2px solid blue;
+    color: blue;
+}
+/*---------------------Header------------------------*/
+
+main{
+    padding: 0px 30px;
+}
+
+/* Form section with filters*/
+form{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.search-button i{
+    display: none;
+}
+
+form .label{
+    background-color: #eee;
+    border-radius: 10px 0px 0px 10px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form button{
+    background-color: blue;
+    color: #fff;
+}
+
+form input, form label, form button{
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
+form button{
+    border-radius: 0px 10px 10px 0px;
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.filters-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.filters-title{
+    margin-right: 30px;
+    font-weight: bolder;
+}
+
+.filters-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #eee;
+    border-radius: 30px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+.filters-item:hover{
+    background-color: #DEEBFF;
+    color: blue;
+}
+
+.filters-item .filters-item-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    border: 1px solid #DEEBFF;
+    background-color: #DEEBFF;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.filters-item .filters-item-text{
+    padding: 0px 15px;
+    font-weight: bolder;
+}
+
+.info{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.info .info-icon{
+    color: blue;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 12px;
+}
+/*-----------------------Form section with filter's block---------------------*/
+
+/* Accommodation sectionm it resume the accommodation and the most popular block*/
+#accommodations{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+/* This section is about the main accommodation block */
+.accomodations{
+    width: 67%;
+    padding: 15px;
+    background-color: #eee;
+    border-radius: 15px;
+}
+
+.accommodations-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*  Here is the design of the cards on the accommodations section*/
+.accommodations-list .accommodation-item{
+    width: 32%;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.accommodation-item .accommodation-item-img img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.accommodation-item-description{
+    padding: 15px;
+}
+/*---------------Accommodation's card design-----------------*/
+
+.see-more a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+}
+/*---------------End of main accommodation block---------------*/
+
+/*  The most popular section */
+.populars{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 15px;
+    background-color: #eee;
+    border-radius: 15px;
+}
+
+.populars-title{
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.populars-title i{
+    color: black;
+    font-weight: bolder;
+}
+
+.populars-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.popular-item{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.popular-item .popular-item-img{
+    width: 40%;
+}
+
+.popular-item .popular-item-img img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.popular-item .popular-item-description{
+    width: 60%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*-----------This is the end of the popular section---------- */
+/*------------End of accommodation sections--------------------*/
+
+/* Activities section */
+#activities{
+    width: 100%;
+    padding: 15px;
+}
+
+.activities-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.activity-item{
+    width: 24%;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 15px;
+}
+
+.activity-item img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.activity-item .activity-item-description{
+    padding: 15px;
+}
+
+.activity-item-block{
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activity-item-block .activity-item{
+    width: 100%;
+}
+
+.activity-item-block .activity-item img{
+    width: 100%;
+    height: 140px;
+}
+
+#site-footer{
+    background-color: #eee;
+}
+
+.footer-content{
+    padding: 30px;
+    display: flex;
+}
+
+.footer-column{
+    flex-grow: 1;
+}
+
+.footer-column .footer-column-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-column ul{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.footer-column li{
+    padding: 10px 0px;
+}
+
+.footer-column ul a{
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-column ul a:hover{
+    color: blue;
+}
+
+/* Tablet version code*/
+@media screen and (max-width: 998px){
+    main{
+        padding: 0px 0px;
+    }
+    .form{
+        padding: 0px 15px;
+    }
+    #accommodations{
+        flex-direction: column-reverse;
+    }
+    .accomodations{
+        width: 100%;
+        margin-bottom: 30px;
+        background-color: #fff;
+        border-radius: 0px;
+    }
+    .populars{
+        width: 100%;
+        margin-bottom: 30px;
+        border-radius: 0px;
+    }
+    .activities-list{
+        flex-wrap: wrap;
+    }
+    .activities-list .item-size{
+        width: 48%;
+        margin: 1%;
+    }
+    .activity-item img{
+        height: 450px;
+    }
+    .activity-item-block .activity-item img{
+        height: 180px;
+    }
+}
+
+/* Mobile version code */
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 22px;
+    }
+    #site-header{
+        flex-direction: column;
+        justify-content:flex-start;
+    }
+    .site-navigation{
+        width: 100%;
+        padding-top: 15px;
+    }
+    .site-navigation ul li{
+        width: 50%;
+        text-align: center;
+    }
+    .site-navigation ul a{
+        display: block;
+        padding: 15px 0px;
+        border-bottom: 2px solid grey;
+    }
+    .site-navigation ul a:hover{
+        border-top: none;
+        border-color: blue;
+    }
+    .accommodations-list{
+        flex-direction: column;
+    }
+    .accommodations-list .accommodation-item{
+        width: 100%;
+    }
+    .activities-list{
+        flex-direction: column;
+    }
+    .activity-item, .activity-item-block, .activity-item-block .activity-item, .activities-list .item-size{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .activity-item img, .activity-item-block .activity-item img{
+        height: 150px;
+    }
+    .footer-content{
+        flex-direction: column;
+    }
+    
+}
